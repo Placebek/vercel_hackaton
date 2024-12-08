@@ -8,7 +8,7 @@ function ModalAuthRegister({ closeModal, setIsAuth }) {
     const [formData, setFormData] = useState({
         username: '',
         password: '',
-    }); ``
+    });
     const [error, setError] = useState([]);
     const [loading, setLoading] = useState(false);
     const [isRegistered, setIsRegistered] = useState(false);
@@ -117,11 +117,6 @@ function ModalAuthRegister({ closeModal, setIsAuth }) {
                                 {isRegistering ? 'Зарегистрироваться' : 'Войти'}
                             </button>
                         </div>
-                        {loading && (
-                            <div className='flex justify-center'>
-                                <p>Подождите, идет обработка...</p>
-                            </div>
-                        )}
                     </form>
                     <p className="text-center mt-4 text-[#10385C] ">
                         {isRegistering
@@ -138,7 +133,11 @@ function ModalAuthRegister({ closeModal, setIsAuth }) {
                             {isRegistering ? 'Войти' : 'Зарегистрироваться'}
                         </button>
                     </p>
-
+                    {loading && (
+                        <div className='flex justify-center'>
+                            <p>Подождите, идет обработка...</p>
+                        </div>
+                    )}
                 </div>
             </div>
             {isRegistered && (
