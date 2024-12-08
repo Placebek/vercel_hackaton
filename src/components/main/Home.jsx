@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import Modal from './Modal';
 import { validateInput } from '../validations/validation';
@@ -126,6 +127,7 @@ function Home() {
         vulnerability_indicator: 5.5,
         description: "## https://sploitus.com/exploit?id=90FFF58A-EDFA-5C1A-B7A4-2FE763FECB06\n%PDF-1.5\n%\ufffd\ufffd\ufffd\ufffd\n16 0 obj\n<<\n/Length 972 \n/Filter /FlateDecode\n>>\nstream..mvwmwklrmlermmtbjnjbenbjlkevkjlwmwkjdvnwkjvnwrkjnvkrnvkj.",
         task_interval: 5,
+        sample: 'Exploit',
         user: null,
         vuln_tool: 1
     },
@@ -152,6 +154,7 @@ function Home() {
         vulnerability_indicator: 7.4,
         description: "This vulnerability allows malicious scripts to execute in the victim's browser.",
         task_interval: 15,
+        sample: 'PoC',
         user: null,
         vuln_tool: 3
     }])
@@ -207,3 +210,22 @@ function Home() {
 }
 
 export default Home;
+=======
+import React from 'react'
+
+function Home() {
+  return (
+    <div>
+      <div>
+        <input
+          placeholder='Izdeu..'
+          type="text"
+          className='bg-[#0000000] rounded-full pl-5 ml-[17px] h-[38px] mt-[15px] focus:outline-none placeholder:text-gray-600 placeholder:font-semibold'
+        />
+      </div>
+    </div>
+  )
+}
+
+export default Home
+>>>>>>> 8bf0b89 (Start)

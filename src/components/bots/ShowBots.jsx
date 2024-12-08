@@ -34,11 +34,12 @@ function ShowBots() {
 
     return (
         <div>
-            <div className='flex justify-center flex-wrap gap-4'>
+            <div className='text-[2.5vh] font-semibold text-[#335E87] text-center mt-[5vh]'>Ваши созданные боты:</div>
+            <div className='flex justify-center flex-wrap gap-2 mt-[4vh]'>
                 {loading ? (
                     <p className="text-white text-center">Загрузка...</p>
                 ) : error ? (
-                    <p className="text-red-500 text-center">{error}</p>
+                    <p className="text-red-500 text-center ">{error}</p>
                 ) : botsList.length > 0 ? (
                     botsList.map((bot) => (
                         <div key={bot.id} className="">
