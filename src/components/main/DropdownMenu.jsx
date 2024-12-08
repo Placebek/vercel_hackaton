@@ -45,7 +45,7 @@ function DropdownMenu({ isAuth, toggleModal, toggleCreateBotModal }) {
                         className="h-[5vh] cursor-pointer flex justify-center items-center text-[2vh] border-b-[1px] border-white font-semibold text-slate-600"
                         onClick={() => handleProtectedAction(toggleCreateBotModal)}
                     >
-                        Создать нового бота
+                        Добавить нового бота
                     </div>
                     <Link to='/my_bots'
                         className="h-[5vh] cursor-pointer flex justify-center items-center text-[2vh] font-semibold text-slate-600"

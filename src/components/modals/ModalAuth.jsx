@@ -8,7 +8,7 @@ function ModalAuthRegister({ closeModal, setIsAuth }) {
     const [formData, setFormData] = useState({
         username: '',
         password: '',
-    });
+    }); ``
     const [error, setError] = useState([]);
     const [loading, setLoading] = useState(false);
     const [isRegistered, setIsRegistered] = useState(false);
@@ -112,11 +112,16 @@ function ModalAuthRegister({ closeModal, setIsAuth }) {
                         <div className=" mt-3 flex justify-center items-center ">
                             <button
                                 type="submit"
-                                className="bg-[#335E87] text-white font-semibold px-4 py-2 md:mt-6 rounded-[20px] hover:bg-blue-600 shadow-custom"
+                                className="bg-[#335E87] text-white font-semibold px-4 py-2 md:mt-8 rounded-[20px] hover:bg-blue-600 shadow-custom"
                             >
                                 {isRegistering ? 'Зарегистрироваться' : 'Войти'}
                             </button>
                         </div>
+                        {loading && (
+                            <div className='flex justify-center'>
+                                <p>Подождите, идет обработка...</p>
+                            </div>
+                        )}
                     </form>
                     <p className="text-center mt-4 text-[#10385C] ">
                         {isRegistering
@@ -133,11 +138,7 @@ function ModalAuthRegister({ closeModal, setIsAuth }) {
                             {isRegistering ? 'Войти' : 'Зарегистрироваться'}
                         </button>
                     </p>
-                    {loading && (
-                        <div className='flex justify-center'>
-                            <p>Подождите, идет обработка...</p>
-                        </div>
-                    )}
+
                 </div>
             </div>
             {isRegistered && (

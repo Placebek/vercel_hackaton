@@ -51,7 +51,7 @@ function Header() {
                 ) : (
                     <button
                         onClick={handleLogout}
-                        className="text-white px-4 py-1 bg-slate-600 mr-[1.9vw] rounded-lg"
+                        className="text-white px-2 bg-[#385E82BA] font-semibold rounded-[20px] w-[25vw] md:w-[10vw] md:text-[2vh] md:mr-[1.1vw] h-[5vh] border-[2px] border-[#335E87] text-[1.6vh] shadow-custom mr-2"
                     >
                         Выйти
                     </button>
